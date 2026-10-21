@@ -1,0 +1,1029 @@
+(kicad_sch (version 20230121) (generator "eeschema")
+  (uuid "a8f1f9fd-458e-4139-830d-1cfd1c60bd15")
+  (paper "A4")
+  (title_block
+    (title "12-key 3x4 Matrix MIDI Keyboard (COL2ROW)")
+    (date "2026-10-19")
+    (rev "1.0")
+    (comment 1 "Diode per key, cathode to ROW. Firmware: matrix_12key.py")
+  )
+  (lib_symbols
+    (symbol "Device:D"
+    		(pin_numbers
+    			(hide yes)
+    		)
+    		(pin_names
+    			(offset 1.016)
+    			(hide yes)
+    		)
+    		(exclude_from_sim no)
+    		(in_bom yes)
+    		(on_board yes)
+    		(in_pos_files yes)
+    		(duplicate_pin_numbers_are_jumpers no)
+    		(property "Reference" "D"
+    			(at 0 2.54 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Value" "D"
+    			(at 0 -2.54 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Footprint" ""
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Datasheet" ""
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Description" "Diode"
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Sim.Device" "D"
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Sim.Pins" "1=K 2=A"
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "ki_keywords" "diode"
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(symbol "D_0_1"
+    			(polyline
+    				(pts
+    					(xy -1.27 1.27) (xy -1.27 -1.27)
+    				)
+    				(stroke
+    					(width 0.254)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(polyline
+    				(pts
+    					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+    				)
+    				(stroke
+    					(width 0.254)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(polyline
+    				(pts
+    					(xy 1.27 0) (xy -1.27 0)
+    				)
+    				(stroke
+    					(width 0)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    		)
+    		(symbol "D_1_1"
+    			(pin passive line
+    				(at -3.81 0 0)
+    				(length 2.54)
+    				(name "K"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "1"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    			(pin passive line
+    				(at 3.81 0 180)
+    				(length 2.54)
+    				(name "A"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "2"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    		)
+    		(embedded_fonts no)
+    	)
+    (symbol "Switch:SW_Push"
+    		(pin_numbers
+    			(hide yes)
+    		)
+    		(pin_names
+    			(offset 1.016)
+    			(hide yes)
+    		)
+    		(exclude_from_sim no)
+    		(in_bom yes)
+    		(on_board yes)
+    		(in_pos_files yes)
+    		(duplicate_pin_numbers_are_jumpers no)
+    		(property "Reference" "SW"
+    			(at 1.27 2.54 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    				(justify left)
+    			)
+    		)
+    		(property "Value" "SW_Push"
+    			(at 0 -1.524 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Footprint" ""
+    			(at 0 5.08 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Datasheet" ""
+    			(at 0 5.08 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Description" "Push button switch, generic, two pins"
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "ki_keywords" "switch normally-open pushbutton push-button"
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(symbol "SW_Push_0_1"
+    			(circle
+    				(center -2.032 0)
+    				(radius 0.508)
+    				(stroke
+    					(width 0)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(polyline
+    				(pts
+    					(xy 0 1.27) (xy 0 3.048)
+    				)
+    				(stroke
+    					(width 0)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(circle
+    				(center 2.032 0)
+    				(radius 0.508)
+    				(stroke
+    					(width 0)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(polyline
+    				(pts
+    					(xy 2.54 1.27) (xy -2.54 1.27)
+    				)
+    				(stroke
+    					(width 0)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(pin passive line
+    				(at -5.08 0 0)
+    				(length 2.54)
+    				(name "1"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "1"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    			(pin passive line
+    				(at 5.08 0 180)
+    				(length 2.54)
+    				(name "2"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "2"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    		)
+    		(embedded_fonts no)
+    	)
+    (symbol "Connector_Generic:Conn_01x07"
+    		(pin_names
+    			(offset 1.016)
+    			(hide yes)
+    		)
+    		(exclude_from_sim no)
+    		(in_bom yes)
+    		(on_board yes)
+    		(in_pos_files yes)
+    		(duplicate_pin_numbers_are_jumpers no)
+    		(property "Reference" "J"
+    			(at 0 10.16 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Value" "Conn_01x07"
+    			(at 0 -10.16 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Footprint" ""
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Datasheet" ""
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "ki_keywords" "connector"
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(property "ki_fp_filters" "Connector*:*_1x??_*"
+    			(at 0 0 0)
+    			(show_name no)
+    			(do_not_autoplace no)
+    			(hide yes)
+    			(effects
+    				(font
+    					(size 1.27 1.27)
+    				)
+    			)
+    		)
+    		(symbol "Conn_01x07_1_1"
+    			(rectangle
+    				(start -1.27 8.89)
+    				(end 1.27 -8.89)
+    				(stroke
+    					(width 0.254)
+    					(type default)
+    				)
+    				(fill
+    					(type background)
+    				)
+    			)
+    			(rectangle
+    				(start -1.27 7.747)
+    				(end 0 7.493)
+    				(stroke
+    					(width 0.1524)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(rectangle
+    				(start -1.27 5.207)
+    				(end 0 4.953)
+    				(stroke
+    					(width 0.1524)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(rectangle
+    				(start -1.27 2.667)
+    				(end 0 2.413)
+    				(stroke
+    					(width 0.1524)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(rectangle
+    				(start -1.27 0.127)
+    				(end 0 -0.127)
+    				(stroke
+    					(width 0.1524)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(rectangle
+    				(start -1.27 -2.413)
+    				(end 0 -2.667)
+    				(stroke
+    					(width 0.1524)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(rectangle
+    				(start -1.27 -4.953)
+    				(end 0 -5.207)
+    				(stroke
+    					(width 0.1524)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(rectangle
+    				(start -1.27 -7.493)
+    				(end 0 -7.747)
+    				(stroke
+    					(width 0.1524)
+    					(type default)
+    				)
+    				(fill
+    					(type none)
+    				)
+    			)
+    			(pin passive line
+    				(at -5.08 7.62 0)
+    				(length 3.81)
+    				(name "Pin_1"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "1"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    			(pin passive line
+    				(at -5.08 5.08 0)
+    				(length 3.81)
+    				(name "Pin_2"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "2"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    			(pin passive line
+    				(at -5.08 2.54 0)
+    				(length 3.81)
+    				(name "Pin_3"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "3"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    			(pin passive line
+    				(at -5.08 0 0)
+    				(length 3.81)
+    				(name "Pin_4"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "4"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    			(pin passive line
+    				(at -5.08 -2.54 0)
+    				(length 3.81)
+    				(name "Pin_5"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "5"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    			(pin passive line
+    				(at -5.08 -5.08 0)
+    				(length 3.81)
+    				(name "Pin_6"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "6"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    			(pin passive line
+    				(at -5.08 -7.62 0)
+    				(length 3.81)
+    				(name "Pin_7"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    				(number "7"
+    					(effects
+    						(font
+    							(size 1.27 1.27)
+    						)
+    					)
+    				)
+    			)
+    		)
+    		(embedded_fonts no)
+    	)
+  )
+  (symbol (lib_id "Switch:SW_Push") (at 70 60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "9592b4ee-7c20-4ea9-b097-0807dd8de432")
+    (property "Reference" "SW1" (at 68 54.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K0 (C4)" (at 72 65.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 70 60 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 70 60 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "bca55c17-5247-4099-bccf-d9d3577036ab"))
+    (pin "2" (uuid "291d58e3-6f30-4f1e-b846-7e63d386f4e1"))
+    (instances (project "midi_matrix" (path "/" (reference "SW1") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 83.97 60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "e8475c42-6870-431e-986d-9e8335139a05")
+    (property "Reference" "D1" (at 83.97 55.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 83.97 64.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 83.97 60 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 83.97 60 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "278598b4-ced5-40c7-945e-3e91693be332"))
+    (pin "2" (uuid "5996c6fa-c888-46cd-add6-bbc19a5c434c"))
+    (instances (project "midi_matrix" (path "/" (reference "D1") (unit 1))))
+  )
+  (wire (pts (xy 75.08 60) (xy 80.16 60)) (stroke (width 0) (type default)) (uuid "f49bdc87-fbb5-41fe-a17e-4f93063b62e4"))
+  (wire (pts (xy 64.92 60) (xy 59.84 60)) (stroke (width 0) (type default)) (uuid "9540c31e-520f-4692-b2f1-11c2f9e6856f"))
+  (label "ROW1" (at 59.84 60 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5f524422-8fc5-441d-8271-5a20368ecb3a"))
+  (wire (pts (xy 87.78 60) (xy 92.86 60)) (stroke (width 0) (type default)) (uuid "3c4f1db3-d407-4de6-a9f0-c70beac2a8f5"))
+  (label "COL1" (at 92.86 60 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7544b3ad-7171-4311-82f5-bd365e1d2956"))
+  (symbol (lib_id "Switch:SW_Push") (at 130 60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "0da4256f-ccc8-4770-8740-6b3afff8f1de")
+    (property "Reference" "SW2" (at 128 54.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K1 (C#4)" (at 132 65.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 130 60 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 130 60 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "61672800-7645-41ef-9f84-989b839c783b"))
+    (pin "2" (uuid "5a704ad3-dff3-4d0e-b3a6-de59bff4ae7e"))
+    (instances (project "midi_matrix" (path "/" (reference "SW2") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 143.97 60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "bf65778e-4452-4b04-96ed-fce20317928f")
+    (property "Reference" "D2" (at 143.97 55.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 143.97 64.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 143.97 60 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 143.97 60 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "11fd37e8-220f-478d-8863-5551c6ca330d"))
+    (pin "2" (uuid "717e6283-87c3-448b-bb8e-bf30d4e7d212"))
+    (instances (project "midi_matrix" (path "/" (reference "D2") (unit 1))))
+  )
+  (wire (pts (xy 135.08 60) (xy 140.16 60)) (stroke (width 0) (type default)) (uuid "2a4b0387-c29e-4cdd-9298-c65d61d62d38"))
+  (wire (pts (xy 124.92 60) (xy 119.84 60)) (stroke (width 0) (type default)) (uuid "7b1ea157-98cf-4bd1-b7d9-14af382e3368"))
+  (label "ROW1" (at 119.84 60 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "6adcb06e-8be0-4bf9-b778-1f23404f9fa1"))
+  (wire (pts (xy 147.78 60) (xy 152.86 60)) (stroke (width 0) (type default)) (uuid "96cba1a9-79c4-481e-bc8b-069669c89bcc"))
+  (label "COL2" (at 152.86 60 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "819e6135-887b-49ac-bc90-cd7314cf51fc"))
+  (symbol (lib_id "Switch:SW_Push") (at 190 60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "1bb9c7a8-1a22-42f6-bfc4-b1cb8b989424")
+    (property "Reference" "SW3" (at 188 54.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K2 (D4)" (at 192 65.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 190 60 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 190 60 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "b7372743-3796-4fc7-9f0c-bf4f864a9dd7"))
+    (pin "2" (uuid "85d27909-9899-47ac-8cc5-05b96a56c3ce"))
+    (instances (project "midi_matrix" (path "/" (reference "SW3") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 203.97 60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "f0ab37c0-365b-44a0-aa1a-d4d8132fdb37")
+    (property "Reference" "D3" (at 203.97 55.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 203.97 64.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 203.97 60 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 203.97 60 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "a23a7e42-7164-48e4-982e-146708b7f0f7"))
+    (pin "2" (uuid "99de0311-667d-4ad8-813c-be18d22cad3c"))
+    (instances (project "midi_matrix" (path "/" (reference "D3") (unit 1))))
+  )
+  (wire (pts (xy 195.08 60) (xy 200.16 60)) (stroke (width 0) (type default)) (uuid "f2a1add0-4d6f-498c-a4f1-9b8df34bc603"))
+  (wire (pts (xy 184.92 60) (xy 179.84 60)) (stroke (width 0) (type default)) (uuid "4b7833b9-673a-4ead-ab95-327627ae3fed"))
+  (label "ROW1" (at 179.84 60 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "3a6cbf11-43d4-428b-b9ec-6f025993fb77"))
+  (wire (pts (xy 207.78 60) (xy 212.86 60)) (stroke (width 0) (type default)) (uuid "f471900b-9ea0-4096-a3cd-df18a5be7b9a"))
+  (label "COL3" (at 212.86 60 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "42a1f462-eca0-4f58-a86f-1b8d6833c952"))
+  (symbol (lib_id "Switch:SW_Push") (at 250 60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "2f0b8d32-901c-4760-9d61-41f9e38ab425")
+    (property "Reference" "SW4" (at 248 54.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K3 (D#4)" (at 252 65.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 250 60 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 250 60 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "efc1a711-de3d-4095-ba5b-d59bcfdb16ea"))
+    (pin "2" (uuid "ab98b8fe-fe37-4bed-93af-3f041d14a118"))
+    (instances (project "midi_matrix" (path "/" (reference "SW4") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 263.97 60 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "0dba9ac2-e387-4d45-9eea-48b8e5f49ca3")
+    (property "Reference" "D4" (at 263.97 55.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 263.97 64.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 263.97 60 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 263.97 60 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "0bdea74c-afc7-4ae2-971c-93f48907d3ff"))
+    (pin "2" (uuid "3777000f-4b24-4961-9c4e-7f3f6025d441"))
+    (instances (project "midi_matrix" (path "/" (reference "D4") (unit 1))))
+  )
+  (wire (pts (xy 255.08 60) (xy 260.16 60)) (stroke (width 0) (type default)) (uuid "2239439b-7fad-4b75-9452-4e28f5bc01c1"))
+  (wire (pts (xy 244.92 60) (xy 239.84 60)) (stroke (width 0) (type default)) (uuid "da271c34-545a-4f39-bcac-ac32eb926601"))
+  (label "ROW1" (at 239.84 60 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "85325964-f7f5-4a45-b961-03842538cf86"))
+  (wire (pts (xy 267.78 60) (xy 272.86 60)) (stroke (width 0) (type default)) (uuid "acd6cbab-3cfd-459e-a2a8-90fc402c4019"))
+  (label "COL4" (at 272.86 60 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3ac3ea43-f7a4-47a2-97cb-4ea4ad37086c"))
+  (symbol (lib_id "Switch:SW_Push") (at 70 90 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "3f3750e1-cf3e-4df7-8bf0-a2f0b5b642f3")
+    (property "Reference" "SW5" (at 68 84.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K4 (E4)" (at 72 95.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 70 90 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 70 90 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "424d29f6-2b0e-4807-a83e-a523adbd6d46"))
+    (pin "2" (uuid "86540dc2-5f74-41db-9b7d-b69eb2f6f279"))
+    (instances (project "midi_matrix" (path "/" (reference "SW5") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 83.97 90 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "a3a5d179-2f54-4b33-86a9-2482dc79772c")
+    (property "Reference" "D5" (at 83.97 85.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 83.97 94.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 83.97 90 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 83.97 90 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "520396a0-5d5b-4bb0-94cc-47c077489d3e"))
+    (pin "2" (uuid "df77259e-c8c5-43f9-86af-0b17e0b77004"))
+    (instances (project "midi_matrix" (path "/" (reference "D5") (unit 1))))
+  )
+  (wire (pts (xy 75.08 90) (xy 80.16 90)) (stroke (width 0) (type default)) (uuid "189bdec9-51fb-46d8-af03-9ac901c283a3"))
+  (wire (pts (xy 64.92 90) (xy 59.84 90)) (stroke (width 0) (type default)) (uuid "44bb1e5e-b5db-4781-baab-2ead39e80680"))
+  (label "ROW2" (at 59.84 90 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0a3a6f0b-c201-42dd-93e4-7639668a528b"))
+  (wire (pts (xy 87.78 90) (xy 92.86 90)) (stroke (width 0) (type default)) (uuid "e6fa3848-56d0-4f20-a459-4ae9183da707"))
+  (label "COL1" (at 92.86 90 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "72eb7c57-5913-4a6a-9571-71140050ecc6"))
+  (symbol (lib_id "Switch:SW_Push") (at 130 90 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "f44d22e7-7826-4e2d-9766-c729e71009ee")
+    (property "Reference" "SW6" (at 128 84.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K5 (F4)" (at 132 95.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 130 90 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 130 90 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "50b23947-822a-445f-b21d-4f07d66b4d2f"))
+    (pin "2" (uuid "f082792f-c90e-484c-a2da-54a758f3883d"))
+    (instances (project "midi_matrix" (path "/" (reference "SW6") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 143.97 90 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "0753399d-05c8-4b66-83a7-2f96186c5cfd")
+    (property "Reference" "D6" (at 143.97 85.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 143.97 94.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 143.97 90 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 143.97 90 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "cf742b1c-afe7-4149-8031-a6ab80296c52"))
+    (pin "2" (uuid "39112923-bab8-45ee-817a-bebf510ba949"))
+    (instances (project "midi_matrix" (path "/" (reference "D6") (unit 1))))
+  )
+  (wire (pts (xy 135.08 90) (xy 140.16 90)) (stroke (width 0) (type default)) (uuid "bfb9f99f-1f6c-4c34-98a3-deb82ffeb998"))
+  (wire (pts (xy 124.92 90) (xy 119.84 90)) (stroke (width 0) (type default)) (uuid "b06e41e7-2be4-40cd-b416-ee378b67089a"))
+  (label "ROW2" (at 119.84 90 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f904a4f0-0616-4e8a-8129-071b0de3aa1b"))
+  (wire (pts (xy 147.78 90) (xy 152.86 90)) (stroke (width 0) (type default)) (uuid "3b725b7b-96b4-423a-b4d4-2b60321ca875"))
+  (label "COL2" (at 152.86 90 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "52cea034-ea07-419a-8c22-d1b6c592d8e4"))
+  (symbol (lib_id "Switch:SW_Push") (at 190 90 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "545f44fe-a000-47db-9d97-5d80734a4c6b")
+    (property "Reference" "SW7" (at 188 84.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K6 (F#4)" (at 192 95.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 190 90 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 190 90 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "87e93c97-76d9-4122-80b3-84e1168280a2"))
+    (pin "2" (uuid "63c82fff-ba16-4979-a2f7-cac2372f73f5"))
+    (instances (project "midi_matrix" (path "/" (reference "SW7") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 203.97 90 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "9df5923b-b39e-491b-9911-06d2716f606b")
+    (property "Reference" "D7" (at 203.97 85.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 203.97 94.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 203.97 90 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 203.97 90 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "c2510604-77c4-4889-b799-88b0b9ea0aaf"))
+    (pin "2" (uuid "bcf344a5-dfe9-457d-9ea9-7103c95c8a52"))
+    (instances (project "midi_matrix" (path "/" (reference "D7") (unit 1))))
+  )
+  (wire (pts (xy 195.08 90) (xy 200.16 90)) (stroke (width 0) (type default)) (uuid "ac2509b1-53be-4ce4-a869-d3401f3c71d1"))
+  (wire (pts (xy 184.92 90) (xy 179.84 90)) (stroke (width 0) (type default)) (uuid "0cbe56f8-6e46-4c6c-a9e7-e5920b702f92"))
+  (label "ROW2" (at 179.84 90 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "dd7c3e74-f276-424b-bdcc-a9fda4113049"))
+  (wire (pts (xy 207.78 90) (xy 212.86 90)) (stroke (width 0) (type default)) (uuid "d8122776-a9da-466b-90c5-19c262446532"))
+  (label "COL3" (at 212.86 90 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d197e8cb-7658-42aa-b540-f919c91ce92e"))
+  (symbol (lib_id "Switch:SW_Push") (at 250 90 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "b0004264-52f7-4098-977e-d24494d2f9c2")
+    (property "Reference" "SW8" (at 248 84.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K7 (G4)" (at 252 95.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 250 90 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 250 90 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "b5552556-3a69-466b-b3d0-852390087662"))
+    (pin "2" (uuid "decad373-fde0-427a-ad6f-2112a542641c"))
+    (instances (project "midi_matrix" (path "/" (reference "SW8") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 263.97 90 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "ed1a0782-df2d-4e48-9e72-70b9813f547f")
+    (property "Reference" "D8" (at 263.97 85.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 263.97 94.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 263.97 90 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 263.97 90 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "91021a4a-6bfb-47e0-a288-e5d973f7c2e8"))
+    (pin "2" (uuid "f71e710b-cd40-4505-a900-edf448d4bb15"))
+    (instances (project "midi_matrix" (path "/" (reference "D8") (unit 1))))
+  )
+  (wire (pts (xy 255.08 90) (xy 260.16 90)) (stroke (width 0) (type default)) (uuid "3ec9febf-c33f-41e8-a99d-44eb29cfcc3d"))
+  (wire (pts (xy 244.92 90) (xy 239.84 90)) (stroke (width 0) (type default)) (uuid "d5fe2c79-95a4-4e2d-9759-dc0d32678786"))
+  (label "ROW2" (at 239.84 90 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "01d4acf0-1710-460d-941c-00fa37d1f70f"))
+  (wire (pts (xy 267.78 90) (xy 272.86 90)) (stroke (width 0) (type default)) (uuid "cee35587-a7f2-4e14-b9b2-829585d701f7"))
+  (label "COL4" (at 272.86 90 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "efd96f01-21fc-4331-a619-188e370f0471"))
+  (symbol (lib_id "Switch:SW_Push") (at 70 120 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "c919614d-4bd2-4140-8059-db7a401ec5b6")
+    (property "Reference" "SW9" (at 68 114.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K8 (G#4)" (at 72 125.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 70 120 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 70 120 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "481e5fdc-777c-4ec7-8952-353ce0678100"))
+    (pin "2" (uuid "5549bf15-307b-4515-a7dc-791b7c4abd22"))
+    (instances (project "midi_matrix" (path "/" (reference "SW9") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 83.97 120 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "ab0f6eca-5fe9-47ea-95a1-18c77c066f16")
+    (property "Reference" "D9" (at 83.97 115.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 83.97 124.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 83.97 120 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 83.97 120 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "d7a11eee-6712-4e50-ad7a-705f1805147c"))
+    (pin "2" (uuid "5f9147e2-3b6a-4102-90aa-b725e202e5bc"))
+    (instances (project "midi_matrix" (path "/" (reference "D9") (unit 1))))
+  )
+  (wire (pts (xy 75.08 120) (xy 80.16 120)) (stroke (width 0) (type default)) (uuid "38a4ba2e-8a9a-4667-bb41-65331770d89f"))
+  (wire (pts (xy 64.92 120) (xy 59.84 120)) (stroke (width 0) (type default)) (uuid "249fafb7-e5f2-4e7a-9760-af23abfaae73"))
+  (label "ROW3" (at 59.84 120 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "841a409d-ccf0-46d4-876b-df05794a05da"))
+  (wire (pts (xy 87.78 120) (xy 92.86 120)) (stroke (width 0) (type default)) (uuid "855d3c9e-55ea-472b-8901-c709769e2445"))
+  (label "COL1" (at 92.86 120 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5f919a82-1452-44a4-9e5d-b18944958907"))
+  (symbol (lib_id "Switch:SW_Push") (at 130 120 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "6e602d3e-d154-4441-8005-68b0fc281b4c")
+    (property "Reference" "SW10" (at 128 114.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K9 (A4)" (at 132 125.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 130 120 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 130 120 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "d1e87c48-c8b0-4914-a5e5-e8c65ba600f3"))
+    (pin "2" (uuid "b7198966-550b-4b1c-83b9-597af7e7b3fb"))
+    (instances (project "midi_matrix" (path "/" (reference "SW10") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 143.97 120 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "fc4b9d53-9e2f-4e33-bc91-b564c2fba600")
+    (property "Reference" "D10" (at 143.97 115.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 143.97 124.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 143.97 120 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 143.97 120 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "37afa9b1-8160-499f-a012-9804c8a60f64"))
+    (pin "2" (uuid "28d97d44-6144-4ed7-86f5-5d6bda306f35"))
+    (instances (project "midi_matrix" (path "/" (reference "D10") (unit 1))))
+  )
+  (wire (pts (xy 135.08 120) (xy 140.16 120)) (stroke (width 0) (type default)) (uuid "d79e297e-603b-4146-8db7-fee331b55c25"))
+  (wire (pts (xy 124.92 120) (xy 119.84 120)) (stroke (width 0) (type default)) (uuid "53aa0ffd-d15e-4c14-97ac-a3be0e794314"))
+  (label "ROW3" (at 119.84 120 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4c80ddec-51d7-4a02-b27e-ed7c3f0ce058"))
+  (wire (pts (xy 147.78 120) (xy 152.86 120)) (stroke (width 0) (type default)) (uuid "abf43c1d-def0-42ad-9892-4a7b41461b86"))
+  (label "COL2" (at 152.86 120 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9202aeb7-859e-4d02-a006-5edd0062c02f"))
+  (symbol (lib_id "Switch:SW_Push") (at 190 120 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "b483b478-8e6a-4067-803c-ada57763b487")
+    (property "Reference" "SW11" (at 188 114.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K10 (A#4)" (at 192 125.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 190 120 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 190 120 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "69a7a530-44d8-4b67-87a3-7cb78c8c0314"))
+    (pin "2" (uuid "598e1e81-fdf7-4440-8f39-ba51d73ec751"))
+    (instances (project "midi_matrix" (path "/" (reference "SW11") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 203.97 120 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "db86d1e1-1036-4de7-a91b-45d9dcddf45d")
+    (property "Reference" "D11" (at 203.97 115.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 203.97 124.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 203.97 120 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 203.97 120 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "78eae8fa-fdc1-45c0-8277-c442a8992076"))
+    (pin "2" (uuid "a9947d8b-62da-4a79-93a6-7b9c743fb9a9"))
+    (instances (project "midi_matrix" (path "/" (reference "D11") (unit 1))))
+  )
+  (wire (pts (xy 195.08 120) (xy 200.16 120)) (stroke (width 0) (type default)) (uuid "f702c950-2c86-4c41-949c-638840362cac"))
+  (wire (pts (xy 184.92 120) (xy 179.84 120)) (stroke (width 0) (type default)) (uuid "2b4509bb-e433-4838-b84f-6dfcbf256797"))
+  (label "ROW3" (at 179.84 120 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0561ac5b-d05d-4841-81b0-5c8752802eaf"))
+  (wire (pts (xy 207.78 120) (xy 212.86 120)) (stroke (width 0) (type default)) (uuid "6346e14c-5133-4fd3-9ece-247f95f7ddcd"))
+  (label "COL3" (at 212.86 120 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cd0978f1-f180-4b19-96ee-c2909b53ecec"))
+  (symbol (lib_id "Switch:SW_Push") (at 250 120 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "0b55a0ce-e7e8-4ab7-916d-e351057e4932")
+    (property "Reference" "SW12" (at 248 114.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "K11 (B4)" (at 252 125.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 250 120 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 250 120 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "da4d9fc7-2438-4917-a546-15e6a99c1c9e"))
+    (pin "2" (uuid "5603a1f1-26df-4e97-8d93-b16a71c59b31"))
+    (instances (project "midi_matrix" (path "/" (reference "SW12") (unit 1))))
+  )
+  (symbol (lib_id "Device:D") (at 263.97 120 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "69f85c31-329e-4b8a-a003-c1838def3f83")
+    (property "Reference" "D12" (at 263.97 115.5 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "1N4148" (at 263.97 124.5 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 263.97 120 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 263.97 120 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "5ce4d883-e071-4fa3-8d10-f2d22fc5ef64"))
+    (pin "2" (uuid "ac923d6d-1f41-45ac-82a6-82893229d22a"))
+    (instances (project "midi_matrix" (path "/" (reference "D12") (unit 1))))
+  )
+  (wire (pts (xy 255.08 120) (xy 260.16 120)) (stroke (width 0) (type default)) (uuid "7746242a-8271-45ac-a544-a18983f1cb6a"))
+  (wire (pts (xy 244.92 120) (xy 239.84 120)) (stroke (width 0) (type default)) (uuid "caa4b32f-6db1-484d-bdb6-3336245b3bca"))
+  (label "ROW3" (at 239.84 120 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "e7056c82-11c5-41d1-8e4c-55873e604c4e"))
+  (wire (pts (xy 267.78 120) (xy 272.86 120)) (stroke (width 0) (type default)) (uuid "abbbf9cd-3598-4e43-b745-4ec628e0af46"))
+  (label "COL4" (at 272.86 120 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d8ac80be-47d0-41bf-9fe4-da2d51591550"))
+  (symbol (lib_id "Connector_Generic:Conn_01x07") (at 245 140 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid "6bc15d92-3d4b-433a-9240-f465838e78c2")
+    (property "Reference" "J1" (at 247 129 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "RP2040 GPIO" (at 247 151 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 245 140 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 245 140 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "74735b48-a656-418d-b64e-a9651ba8a182"))
+    (pin "2" (uuid "84501dcd-d50b-4696-b77f-9a331c2ce850"))
+    (pin "3" (uuid "9a8ceff6-abf2-4649-95bb-8970fcdf2709"))
+    (pin "4" (uuid "c523e9de-23d0-486a-b739-70548b6d84b2"))
+    (pin "5" (uuid "b83b7d3d-4a77-4e96-bcc9-24e42610ed73"))
+    (pin "6" (uuid "10226fc9-9310-489e-a169-618e67c09055"))
+    (pin "7" (uuid "e0a2f170-095e-4e64-ae32-082f8cb5cb52"))
+    (instances (project "midi_matrix" (path "/" (reference "J1") (unit 1))))
+  )
+  (wire (pts (xy 229.76 132.38) (xy 239.92 132.38)) (stroke (width 0) (type default)) (uuid "af59e2cd-63d7-4c41-ac14-0352b48d5a9c"))
+  (label "ROW1" (at 229.76 132.38 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "bfa58328-8dcb-47f2-aafa-24567c984422"))
+  (wire (pts (xy 224.68 134.92) (xy 239.92 134.92)) (stroke (width 0) (type default)) (uuid "5b7e25ca-6997-48a0-9189-edb693630f85"))
+  (label "ROW2" (at 224.68 134.92 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fff3fadc-c2be-4b32-b23c-fcc761183dc7"))
+  (wire (pts (xy 229.76 137.46) (xy 239.92 137.46)) (stroke (width 0) (type default)) (uuid "4f63b457-9f69-49f9-95a8-fd13a8864940"))
+  (label "ROW3" (at 229.76 137.46 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "643cd923-a38e-4d94-bcab-d478b778d5a2"))
+  (wire (pts (xy 224.68 140) (xy 239.92 140)) (stroke (width 0) (type default)) (uuid "ba676a82-3de0-4090-8a02-227d08f494b5"))
+  (label "COL1" (at 224.68 140 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "6a96925d-b8b6-4b00-a769-7a2bac7d04a0"))
+  (wire (pts (xy 229.76 142.54) (xy 239.92 142.54)) (stroke (width 0) (type default)) (uuid "1e1a4c72-9257-4324-9bf3-94ab93da9d71"))
+  (label "COL2" (at 229.76 142.54 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "bc2f5274-3e09-4792-9386-36bd1771d49d"))
+  (wire (pts (xy 224.68 145.08) (xy 239.92 145.08)) (stroke (width 0) (type default)) (uuid "9709fa7d-0b46-40ad-b9d7-b6cd0807df7f"))
+  (label "COL3" (at 224.68 145.08 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d57690f8-8064-4b36-b660-a1c3d4adf4ab"))
+  (wire (pts (xy 229.76 147.62) (xy 239.92 147.62)) (stroke (width 0) (type default)) (uuid "cdeb3f4f-7309-409b-90d1-0d4af3d44506"))
+  (label "COL4" (at 229.76 147.62 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "7f2c03c4-93b4-4f93-acdb-fec35baf1219"))
+  (text "J1 pin1..7 = GP1..GP7" (at 227 157 0) (effects (font (size 1.5 1.5)) (justify left bottom)) (uuid "71b8f0d6-a70e-417c-bf49-d574a8fae5cf"))
+  (text "ROW1~3 = GP1~3 (output, drive LOW in turn, Hi-Z when idle)" (at 15 150 0) (effects (font (size 1.8 1.8)) (justify left bottom)) (uuid "13eec017-8c82-4527-b102-59f6c2c23f65"))
+  (text "COL1~4 = GP4~7 (input with internal pull-up, no external parts)" (at 15 155 0) (effects (font (size 1.8 1.8)) (justify left bottom)) (uuid "a51cf2e6-fe5e-4bf4-b534-479df9bf35bc"))
+  (text "Each key: ROW -- SW -- 1N4148 -- COL; diode cathode (band) faces ROW (COL2ROW)" (at 15 160 0) (effects (font (size 1.8 1.8)) (justify left bottom)) (uuid "87165aa5-5ac6-4898-9ad0-f13c6fb5e16c"))
+  (text "K0..K11 -> MIDI note 60..71; firmware: matrix_12key.py" (at 15 165 0) (effects (font (size 1.8 1.8)) (justify left bottom)) (uuid "bf20444f-1396-4690-9799-16323cdcdfc9"))
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

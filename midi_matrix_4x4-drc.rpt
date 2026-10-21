@@ -1,0 +1,261 @@
+** Drc report for midi_matrix_4x4.kicad_pcb **
+** Created on 2026-10-21T10:13:59 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 70 DRC violations **
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(40.0500 mm, 20.4800 mm): Segment of D2 on F.Silkscreen
+    @(39.2400 mm, 20.4800 mm): PTH pad 1 [Net-K1] of D2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(45.0500 mm, 20.4800 mm): Segment of D2 on F.Silkscreen
+    @(46.8600 mm, 20.4800 mm): PTH pad 2 [COL2] of D2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(59.1000 mm, 20.4800 mm): Segment of D3 on F.Silkscreen
+    @(58.2900 mm, 20.4800 mm): PTH pad 1 [Net-K2] of D3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.1000 mm, 20.4800 mm): Segment of D3 on F.Silkscreen
+    @(65.9100 mm, 20.4800 mm): PTH pad 2 [COL3] of D3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(78.1500 mm, 20.4800 mm): Segment of D4 on F.Silkscreen
+    @(77.3400 mm, 20.4800 mm): PTH pad 1 [Net-K3] of D4
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(83.1500 mm, 20.4800 mm): Segment of D4 on F.Silkscreen
+    @(84.9600 mm, 20.4800 mm): PTH pad 2 [COL4] of D4
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(97.2000 mm, 20.4800 mm): Segment of D5 on F.Silkscreen
+    @(96.3900 mm, 20.4800 mm): PTH pad 1 [Net-K4] of D5
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(102.2000 mm, 20.4800 mm): Segment of D5 on F.Silkscreen
+    @(104.0100 mm, 20.4800 mm): PTH pad 2 [COL1] of D5
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(21.0000 mm, 20.4800 mm): Segment of D1 on F.Silkscreen
+    @(20.1900 mm, 20.4800 mm): PTH pad 1 [Net-K0] of D1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(26.0000 mm, 20.4800 mm): Segment of D1 on F.Silkscreen
+    @(27.8100 mm, 20.4800 mm): PTH pad 2 [COL1] of D1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(6.1000 mm, 43.6300 mm): Segment of J1 on F.Silkscreen
+    @(8.0000 mm, 43.0000 mm): PTH pad 1 [ROW1] of J1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(116.2500 mm, 20.4800 mm): Segment of D6 on F.Silkscreen
+    @(115.4400 mm, 20.4800 mm): PTH pad 1 [Net-K5] of D6
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.2500 mm, 20.4800 mm): Segment of D6 on F.Silkscreen
+    @(123.0600 mm, 20.4800 mm): PTH pad 2 [COL2] of D6
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(135.3000 mm, 20.4800 mm): Segment of D7 on F.Silkscreen
+    @(134.4900 mm, 20.4800 mm): PTH pad 1 [Net-K6] of D7
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(140.3000 mm, 20.4800 mm): Segment of D7 on F.Silkscreen
+    @(142.1100 mm, 20.4800 mm): PTH pad 2 [COL3] of D7
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(154.3500 mm, 20.4800 mm): Segment of D8 on F.Silkscreen
+    @(153.5400 mm, 20.4800 mm): PTH pad 1 [Net-K7] of D8
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(159.3500 mm, 20.4800 mm): Segment of D8 on F.Silkscreen
+    @(161.1600 mm, 20.4800 mm): PTH pad 2 [COL4] of D8
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(230.5500 mm, 20.4800 mm): Segment of D12 on F.Silkscreen
+    @(229.7400 mm, 20.4800 mm): PTH pad 1 [Net-K11] of D12
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(235.5500 mm, 20.4800 mm): Segment of D12 on F.Silkscreen
+    @(237.3600 mm, 20.4800 mm): PTH pad 2 [COL4] of D12
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(249.6000 mm, 20.4800 mm): Segment of D13 on F.Silkscreen
+    @(248.7900 mm, 20.4800 mm): PTH pad 1 [Net-K12] of D13
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(254.6000 mm, 20.4800 mm): Segment of D13 on F.Silkscreen
+    @(256.4100 mm, 20.4800 mm): PTH pad 2 [COL1] of D13
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(287.7000 mm, 20.4800 mm): Segment of D15 on F.Silkscreen
+    @(286.8900 mm, 20.4800 mm): PTH pad 1 [Net-K14] of D15
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(292.7000 mm, 20.4800 mm): Segment of D15 on F.Silkscreen
+    @(294.5100 mm, 20.4800 mm): PTH pad 2 [COL3] of D15
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(268.6500 mm, 20.4800 mm): Segment of D14 on F.Silkscreen
+    @(267.8400 mm, 20.4800 mm): PTH pad 1 [Net-K13] of D14
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(273.6500 mm, 20.4800 mm): Segment of D14 on F.Silkscreen
+    @(275.4600 mm, 20.4800 mm): PTH pad 2 [COL2] of D14
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(306.7500 mm, 20.4800 mm): Segment of D16 on F.Silkscreen
+    @(305.9400 mm, 20.4800 mm): PTH pad 1 [Net-K15] of D16
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(311.7500 mm, 20.4800 mm): Segment of D16 on F.Silkscreen
+    @(313.5600 mm, 20.4800 mm): PTH pad 2 [COL4] of D16
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(173.4000 mm, 20.4800 mm): Segment of D9 on F.Silkscreen
+    @(172.5900 mm, 20.4800 mm): PTH pad 1 [Net-K8] of D9
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(178.4000 mm, 20.4800 mm): Segment of D9 on F.Silkscreen
+    @(180.2100 mm, 20.4800 mm): PTH pad 2 [COL1] of D9
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(192.4500 mm, 20.4800 mm): Segment of D10 on F.Silkscreen
+    @(191.6400 mm, 20.4800 mm): PTH pad 1 [Net-K9] of D10
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(197.4500 mm, 20.4800 mm): Segment of D10 on F.Silkscreen
+    @(199.2600 mm, 20.4800 mm): PTH pad 2 [COL2] of D10
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(211.5000 mm, 20.4800 mm): Segment of D11 on F.Silkscreen
+    @(210.6900 mm, 20.4800 mm): PTH pad 1 [Net-K10] of D11
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(216.5000 mm, 20.4800 mm): Segment of D11 on F.Silkscreen
+    @(218.3100 mm, 20.4800 mm): PTH pad 2 [COL3] of D11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(20.0000 mm, 30.0000 mm): Footprint SW1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(24.0000 mm, 20.4800 mm): Footprint D1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(39.0500 mm, 30.0000 mm): Footprint SW2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(43.0500 mm, 20.4800 mm): Footprint D2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(58.1000 mm, 30.0000 mm): Footprint SW3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(62.1000 mm, 20.4800 mm): Footprint D3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(77.1500 mm, 30.0000 mm): Footprint SW4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(81.1500 mm, 20.4800 mm): Footprint D4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(96.2000 mm, 30.0000 mm): Footprint SW5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(100.2000 mm, 20.4800 mm): Footprint D5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(115.2500 mm, 30.0000 mm): Footprint SW6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(119.2500 mm, 20.4800 mm): Footprint D6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(134.3000 mm, 30.0000 mm): Footprint SW7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(138.3000 mm, 20.4800 mm): Footprint D7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(153.3500 mm, 30.0000 mm): Footprint SW8
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(157.3500 mm, 20.4800 mm): Footprint D8
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(172.4000 mm, 30.0000 mm): Footprint SW9
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(176.4000 mm, 20.4800 mm): Footprint D9
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(191.4500 mm, 30.0000 mm): Footprint SW10
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(195.4500 mm, 20.4800 mm): Footprint D10
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(210.5000 mm, 30.0000 mm): Footprint SW11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(214.5000 mm, 20.4800 mm): Footprint D11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(229.5500 mm, 30.0000 mm): Footprint SW12
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(233.5500 mm, 20.4800 mm): Footprint D12
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(248.6000 mm, 30.0000 mm): Footprint SW13
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(252.6000 mm, 20.4800 mm): Footprint D13
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(267.6500 mm, 30.0000 mm): Footprint SW14
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(271.6500 mm, 20.4800 mm): Footprint D14
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(286.7000 mm, 30.0000 mm): Footprint SW15
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(290.7000 mm, 20.4800 mm): Footprint D15
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(305.7500 mm, 30.0000 mm): Footprint SW16
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(309.7500 mm, 20.4800 mm): Footprint D16
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(8.0000 mm, 43.0000 mm): Footprint J1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(6.0000 mm, 6.0000 mm): Footprint H1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(312.0000 mm, 6.0000 mm): Footprint H2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(6.0000 mm, 64.5000 mm): Footprint H3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'diy'
+    Local override; warning
+    @(312.0000 mm, 64.5000 mm): Footprint H4
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
