@@ -36,7 +36,7 @@
 - `draw_module_1x4_schematic.py` — 生成方案 B 单模块接线原理图 `module_1x4_schematic.png` / `.svg`（8 线 J1→J2 直通，SJ1-4 焊桥选行，4 键挂 ROW_sel × COL1-4）。
 - `draw_module_wiring.py` — 生成方案 B 整机组装连线框图 `module_wiring.png` / `.svg`（RP2040-Zero + 4 块同款模块级联：每块只焊一个 SJ 选行，J2→J1 对插，GP1-4→pin1-4、GP5-8→pin5-8）。
 - `gen_easyeda_module_1x4.py` — 用嘉立创 EDA 专业版 CLI（`lceda-pro invoke` + eda API）生成方案 B 模块原理图工程 `midi_module_1x4.eprj3/`（EPRJ3 文件夹格式）并导出 `module_1x4_easyeda.png`。器件用真实立创库件（MX 轴 CPG151101S11、1N4148、8P 排针/排母；SJ 焊桥用 1×2P 排针符号代替）。
-- `gen_easyeda_module_1x4_pcb.py` — 模块 PCB 生成器（在原理图之后跑）：76.2×40mm 双层板（板宽=4×19.05，跨模块键距连续），J1 左 J2 右（8P 杜邦级联），SJ1-4 近 J1，8 条总线底层横走，DRC 0 违规，导出 `module_1x4_easyeda_pcb.png`。幂等。注意：CPG151101S11 库封装是热插拔轴座（含 FILL 铜皮和槽圆），生成器会复制改造成纯 5 孔焊接封装，别直接用库原件。
+- `gen_easyeda_module_1x4_pcb.py` — 模块 PCB 生成器（在原理图之后跑）：92.5×40mm 双层板（3640×1575mil），J1/J2 竖放在左右两侧板边中央（1×8P 旋 90°，焊 90° 弯针公头，8P F-F 杜邦线侧插级联）；两侧各留 320mil 边距，代价是模块接缝处键距约 35.3mm（不再连续）。SJ1-4 在板下部中央，8 条总线底层横走、两侧顶层 90° 扇出下接，ROW_SEL 全顶层走线，DRC 0 违规，导出 `module_1x4_easyeda_pcb.png`。幂等。注意：CPG151101S11 库封装是热插拔轴座（含 FILL 铜皮和槽圆），生成器会复制改造成纯 5 孔焊接封装，别直接用库原件；DRC 对过孔按孔+盘（Ø32mil 有效直径）算间距，过孔用 12/20mil。
 
 **嘉立创 EDA 工程（方案 B 模块）：**
 

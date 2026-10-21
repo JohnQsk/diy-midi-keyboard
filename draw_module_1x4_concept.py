@@ -85,7 +85,7 @@ ax.text(DX + 95 * SC / 2, DY + 40 * SC + 16, "board ~95 x 40 mm (JLC free: <=10x
 
 # 两端 8P 排针（左母右公）
 ax.add_patch(plt.Rectangle((DX + 12, DY + 30), 26, 180, color="#f0f0f0", ec=BOX_COLOR, lw=1.2))
-ax.text(DX + 25, DY + 120, "J1\n8P\n(F)", ha="center", va="center", fontsize=9, color=BOX_COLOR)
+ax.text(DX + 25, DY + 120, "J1\n8P\n(M)", ha="center", va="center", fontsize=9, color=BOX_COLOR)
 ax.add_patch(plt.Rectangle((DX + 532, DY + 30), 26, 180, color="#f0f0f0", ec=BOX_COLOR, lw=1.2))
 ax.text(DX + 545, DY + 120, "J2\n8P\n(M)", ha="center", va="center", fontsize=9, color=BOX_COLOR)
 
@@ -127,7 +127,7 @@ ax.annotate("Cherry MX x4, 19.05mm pitch", xy=(DX + 444, DY + 50),
 # ---------- 底部要点 ----------
 notes = [
     "Free-coupon math: one order = 5 identical boards.  16 keys need 4 (+1 spare);  25-key version needs 7 (28 slots).",
-    "Chaining: J1(F) <-> J2(M) plug directly; end of chain -> RP2040 (GP1-4 = ROW1-4, GP5-8 = COL1-4).",
+    "Chaining: J2 -> next module's J1 via 8P F-F dupont cable (side entry); end of chain -> RP2040 (GP1-4 = ROW1-4, GP5-8 = COL1-4).",
     "Firmware unchanged (4x4 matrix): key at module j, position c  ->  note 60 + (j-1)*4 + (c-1).",
     "Every key: ROW -- MX switch -- 1N4148 (band to ROW) -- COL  (COL2ROW, same as before).",
 ]

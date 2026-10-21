@@ -70,7 +70,7 @@ for m in range(4):
                 color=GRAY)
         ax.text(kx + 20, 273, str(60 + k), ha="center", va="center", fontsize=7,
                 color="#999999")
-    ax.text(x + 8, CARD_Y1 - 14, "J1 (F)", ha="left", va="center", fontsize=8,
+    ax.text(x + 8, CARD_Y1 - 14, "J1 (M)", ha="left", va="center", fontsize=8,
             color=GRAY)
     ax.text(x + CARD_W - 8, CARD_Y1 - 14, "J2 (M)", ha="right", va="center",
             fontsize=8, color=GRAY)
@@ -97,9 +97,9 @@ ax.text(783, 362, "COL1-4 run through all modules; each board taps ONE row via i
 
 # ---------- 组装/接线步骤 ----------
 steps = [
-    "1.  Solder all 4 boards identically: 4x MX switch, 4x 1N4148 (band faces ROW side), J1 (female) left, J2 (male) right.",
+    "1.  Solder all 4 boards identically: 4x MX switch, 4x 1N4148 (band faces ROW side), J1/J2 = 1x8P 90-degree male headers on left/right edges.",
     "2.  Solder exactly ONE jumper per board:  MOD A -> SJ1,  MOD B -> SJ2,  MOD C -> SJ3,  MOD D -> SJ4.  (this is the only difference)",
-    "3.  Plug the chain:  A.J2 -> B.J1,  B.J2 -> C.J1,  C.J2 -> D.J1  (left->right = notes ascending C4 -> D#5).",
+    "3.  Chain with 8P F-F dupont cables, side entry:  A.J2 -> B.J1,  B.J2 -> C.J1,  C.J2 -> D.J1  (left->right = notes ascending C4 -> D#5).",
     "4.  RP2040-Zero -> MOD A's J1:  GP1-4 -> pins 1-4 (ROW1-4),  GP5-8 -> pins 5-8 (COL1-4).  8 wires only, no GND/power on the bus.",
     "5.  Flash firmware as code.py:  matrix logic unchanged, ROW_PINS = GP1..GP4, COL_PINS = GP5..GP8.  Done - play.",
 ]
