@@ -21,9 +21,10 @@
 
 **CircuitPython 固件**（拷到 CIRCUITPY 盘改名 `code.py` 运行，本机只是编辑场所）：
 
-- `matrix_12key.py` — 12 键 3×4 矩阵版固件（**首选方案**）。行 GP1~GP3 输出轮流拉低，列 GP4~GP7 输入+内部上拉；二极管 COL2ROW（阴极朝行线）。
+- `matrix_12key.py` — 12 键 3×4 矩阵版固件。行 GP1~GP3 输出轮流拉低，列 GP4~GP7 输入+内部上拉；二极管 COL2ROW（阴极朝行线）。
+- `matrix_16key.py` — 16 键 4×4 矩阵版固件，配 `midi_matrix_4x4` PCB（**当前首选**）。行 GP1~GP4、列 GP5~GP8，J1 pin k 直连 GPk；K0..K15 → 音符 60..75。
 - `hc165_12key.py` — 12 键 74HC165 移位寄存器版固件（备选，无矩阵无二极管，可扩 64 键，GPIO 恒为 3 个：GP9/GP10/GP11）。
-- 两版固件共用同一套消抖/发 MIDI 的循环结构，都在串口打印 `note on <n>` / `note off <n>`（供 `keydash.py` 解析）。
+- 三版固件共用同一套消抖/发 MIDI 的循环结构，都在串口打印 `note on <n>` / `note off <n>`（供 `keydash.py` 解析）。
 
 **电脑端工具（CPython 3，在开发机上运行）：**
 
@@ -52,6 +53,7 @@
 
 **文档（先读这些再动代码）：**
 
+- `README.md` — 16 键 PCB（`midi_matrix_4x4`）到手后的组装/焊接/接线/验证指南（J1→GP 接线表、二极管方向、排障）
 - `research.md` — 调研报告：已定产品决策、固件选型、开源参考项目、力度方案对比、BOM 实价、嘉立创打样规则、Linux 链路坑、原型购物清单
 - `diy.mechanical.midi.keyboard.md` — 方案讨论：整体架构、省线芯片否决理由、两版 12 键原型设计细节、原型进展日志
 - `secondhand.buying.guide.md` — 二手成品 MIDI 键盘选购指南（与 DIY 对照）
@@ -106,6 +108,8 @@ python3 keydash.py [/dev/ttyACM0]
 - 固件脚本里 `adafruit_midi`、`board`、`usb_midi` 等是 CircuitPython 板载库，不要往仓库加 pip 依赖
 - 硬件方向性约束写死在多处文档和注释里：二极管 COL2ROW（色环端/阴极朝行线）、12 个必须同向——改动时全文检索保持一致
 
-## 当前进度（2026-10-19）
+## 当前进度（2026-10-26，晚）
 
-单键链路已验证通过（RP2040-Zero + 1 轴，`aseqdump` 抓到干净 Note On/Off）。下一步：飞线/面包板搭 12 键原型验证和弦无鬼键，电脑端实际发声（fluidsynth + SoundFont）尚未验证，之后再画正式 25 键 PCB。
+**全链路已打通并实际发声**：1×4 模块板（EasyEDA 方案 B）焊了 3 个键（K1/K2/K3，SJ3 选 ROW3），接 RP2040-Zero + `matrix_16key.py` 固件，经 FluidSynth（`/usr/share/sounds/sf2/default-GM.sf2`）+ `aconnect 20:0 128:0` 出声。K2/K3（音符 70/71）工作正常，`aseqdump` 抓到干净 Note On/Off 配对，无连发无丢失。待办：D1/D2 二极管焊反导致 K1（音符 69）无反应，需翻转重焊（与 D3/D4 同向）；其余键位和二极管后续补焊。
+
+经验：FluidSynth 后台常驻不能用 `-i`（会静默退出），正确做法是保留交互 shell 并保持 stdin 打开：`sleep infinity | fluidsynth -a pulseaudio -m alsa_seq <sf2>`；开发机串口 `/dev/ttyACM0` 需用户在 `dialout` 组（尚未配置，`keydash.py` 暂不可用，`aseqdump` 走 ALSA 不受影响）。16 键长条 PCB（`midi_matrix_4x4`）也已打样到手，组装接线见 `README.md`。
